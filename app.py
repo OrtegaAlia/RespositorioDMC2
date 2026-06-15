@@ -191,4 +191,3 @@ elif opcion_menu == "Módulo 3: EDA Core":
             if columnas_usuario:
                 filtro_slider = st.slider("Filtrar registros a visualizar (Muestra):", 5, min(100, len(df)), 20)
                 st.dataframe(df[columnas_usuario].head(filtro_slider))
-                else: 
