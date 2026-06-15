@@ -30,3 +30,12 @@ class DataAnalyzer:
         return tabla_nulos[tabla_nulos['Nulos'] > 0]
 
 st.set_page_config(page_title="Seguros Analytics App", layout="wide")
+
+st.sidebar.title("Navegación 🧭")
+opcion_menu = st.sidebar.radio(
+    "Selecciona un módulo:",
+    ["Módulo 1: Home", "Módulo 2: Carga del Dataset", "Módulo 3: EDA Core", "Módulo 4: Conclusiones"]
+)
+
+if 'data' not in st.session_state:
+    st.session_state['data'] = None
