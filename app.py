@@ -62,3 +62,28 @@ if opcion_menu == "Módulo 1: Home":
         * **Programa:** Especialización en Python for Analytics  
         * **Año:** 2026
         """)
+
+elif opcion_menu == "Módulo 2: Carga del Dataset":
+    st.title("📂 Gestión e Ingreso de Datos")
+    st.write("Sube el archivo `InsuranceCompany.csv` para iniciar el procesamiento automatizado.")
+    
+    archivo_cargado = st.file_uploader("Selecciona el archivo CSV de la aseguradora", type=["csv"])
+    
+    if archivo_cargado is not None:
+        try:
+            df = pd.read_csv(archivo_cargado)
+            st.session_state['data'] = df
+            st.success("✅ ¡El dataset se cargó correctamente!")
+            
+            # Métricas dinámicas utilizando st.columns
+            m1, m2 = st.columns(2)
+            m1.metric("Número de Registros (Filas)", f"{df.shape[0]:,}")
+            m2.metric("Total de Variables (Columnas)", df.shape[1])
+            
+            st.markdown("### 🔍 Vista Previa de los Datos (Primeras filas)")
+            st.dataframe(df.head(10))
+        except Exception as e:
+            st.error(f"Error al procesar el archivo: {e}")
+    else:
+        st.warning("⚠️ Esperando la carga del archivo CSV en el panel superior.")
+
