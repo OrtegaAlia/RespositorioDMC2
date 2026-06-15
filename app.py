@@ -58,7 +58,7 @@ if opcion_menu == "Módulo 1: Home":
     with col2:
         st.info("""
         **🎓 Autor del Proyecto**  
-        * **Nombre Completo:** [Alia Ortega Alvarado]  
+        * **Nombre Completo:** Alia Ortega Alvarado 
         * **Programa:** Especialización en Python for Analytics  
         * **Año:** 2026
         """)
