@@ -39,3 +39,26 @@ opcion_menu = st.sidebar.radio(
 
 if 'data' not in st.session_state:
     st.session_state['data'] = None
+
+if opcion_menu == "Módulo 1: Home":
+    st.title("📊 Aplicación Interactiva: Análisis de Renovación de Pólizas")
+    st.subheader("Caso de Estudio N°3 - Especialización en Python for Analytics")
+    
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.markdown("""
+        ### 🎯 Objetivo del Proyecto
+        Esta plataforma interactiva tiene como fin realizar un **Análisis Exploratorio de Datos (EDA)** 
+        sobre el comportamiento de clientes de seguros. El propósito principal es descubrir los factores 
+        críticos que influyen en la **renovación de pólizas (`renewal`)**, ayudando a la toma de decisiones comerciales.
+        """)
+        st.markdown("### 🛠️ Tecnologías Utilizadas")
+        st.code("Python | Streamlit | Pandas | NumPy | Matplotlib | Seaborn", language="")
+    
+    with col2:
+        st.info("""
+        **🎓 Autor del Proyecto**  
+        * **Nombre Completo:** [Alia Ortega Alvarado]  
+        * **Programa:** Especialización en Python for Analytics  
+        * **Año:** 2026
+        """)
