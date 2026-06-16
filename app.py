@@ -109,7 +109,7 @@ elif opcion_menu == "Módulo 3: EDA Core":
         
         # --- TAB 1 ---
         with tab1:
-            st.header("Ítem 1: Información General del Dataset")
+            st.sidebar.header("Ítem 1: Información General del Dataset")
             st.dataframe(analyzer.obtener_info_general())
             
             st.header("Ítem 2: Clasificación de Variables")
