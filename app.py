@@ -42,6 +42,8 @@ opcion_menu = st.sidebar.radio(
 if 'data' not in st.session_state:
     st.session_state['data'] = None
 
+st.sidebar.image("Logo_IC.png")
+
 if opcion_menu == "Módulo 1: Home":
     st.title("📊 Aplicación Interactiva: Análisis de Renovación de Pólizas")
     st.subheader("Caso de Estudio N°3 - Especialización en Python for Analytics")
