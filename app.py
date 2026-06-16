@@ -67,7 +67,7 @@ elif opcion_menu == "Módulo 2: Carga del Dataset":
     st.title("📂 Gestión e Ingreso de Datos")
     st.write("Sube el archivo `InsuranceCompany.csv` para iniciar el procesamiento automatizado.")
     
-    archivo_cargado = st.file_uploader("Selecciona el archivo CSV de la aseguradora", type=["csv"])
+    archivo_cargado = st.sidebar.file_uploader("Selecciona el archivo CSV de la aseguradora", type=["csv"])
     
     if archivo_cargado is not None:
         try:
