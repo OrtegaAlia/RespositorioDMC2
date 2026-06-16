@@ -31,6 +31,8 @@ class DataAnalyzer:
 
 st.set_page_config(page_title="Seguros Analytics App", layout="wide")
 
+st.sidebar.image("Logo_insurance.png")
+
 st.sidebar.title("Navegación 🧭")
 opcion_menu = st.sidebar.radio(
     "Selecciona un módulo:",
