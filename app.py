@@ -209,7 +209,12 @@ elif opcion_menu == "Módulo 3: EDA Core":
                 st.pyplot(fig)
 elif opcion_menu == "Módulo 4: Conclusiones":
     st.title("🏁 Conclusiones Estratégicas del EDA")
-    st.write("A continuación se presentan los 5 pilares conclusivos del análisis enfocado en negocio:")
+    st.write("A continuación, se presentan los cinco pilares clave del análisis de negocio:")
+    st.info("💡 1. Impacto Crítico de la Morosidad: La presencia de meses de pago atrasados es el principal síntoma de no renovación.")
+    st.info("💡 2. Estabilidad de Ingresos: Los segmentos con un ingreso (income) estable muestran comportamientos predecibles de renovación.")
+    st.info("💡 3. Optimización de Canales: Es imperativo reevaluar la inversión en los canales de venta que traen clientes con alta deserción.")
+    st.info("💡 4. El Factor Edad: Los clientes de mayor edad biológica representan una cartera más leal en comparación con los jóvenes.")
+    st.info("💡 5. Calidad del Scoring: Las puntuaciones de riesgo (underwriting_score) se alinean de forma directa con la permanencia del asegurado.")
 
 
 
