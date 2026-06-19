@@ -207,6 +207,9 @@ elif opcion_menu == "Módulo 3: EDA Core":
                 ax.set_ylabel("")
                 ax.set_title("Proporción General de Renovaciones")
                 st.pyplot(fig)
+elif opcion_menu == "Módulo 4: Conclusiones":
+    st.title("🏁 Conclusiones Estratégicas del EDA")
+    st.write("A continuación se presentan los 5 pilares conclusivos del análisis enfocado en negocio:")
 
 
 
