@@ -200,6 +200,13 @@ elif opcion_menu == "Módulo 3: EDA Core":
             * Punto Crítico: Los clientes con pagos atrasados superiores a 3 meses reducen drásticamente sus tasas de renovación.
             * Canales de Captación: Ciertos canales de adquisición (sourcing_channel) muestran un nivel de lealtad significativamente mayor que otros.
             """)
+            
+            if 'renewal' in df.columns:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                df['renewal'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=['#2ecc71','#e74c3c'], ax=ax)
+                ax.set_ylabel("")
+                ax.set_title("Proporción General de Renovaciones")
+                st.pyplot(fig)
 
 
 
