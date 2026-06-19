@@ -203,7 +203,7 @@ elif opcion_menu == "Módulo 3: EDA Core":
             
             if 'renewal' in df.columns:
                 fig, ax = plt.subplots(figsize=(2, 2))
-                df['renewal'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=['#2ecc71','#e74c3c'], ax=ax)
+                df['renewal'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=['#2ecc51','#e54c3c'], ax=ax)
                 ax.set_ylabel("")
                 ax.set_title("Proporción General de Renovaciones")
                 st.pyplot(fig)
